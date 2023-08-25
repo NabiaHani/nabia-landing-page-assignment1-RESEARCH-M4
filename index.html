@@ -1,0 +1,402 @@
+<!DOCTYPE html>----
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page| ResearchM4</title>
+</head>
+<style>
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #082c4e;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    background-color: #082c4e;
+    justify-content: space-between;
+    min-height: 70px;
+    width: 1050px;
+    border-bottom: 1px solid transparent;
+    left: -114px;
+    right: 0px;
+    top: 0px;
+    padding-right: 100%;
+}
+
+.navbar-1{
+    display: flex;
+    position: relative;
+    padding: 0px 50px;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+    width: 30px;
+    margin-left: 170px;
+    top: 0px;
+    background-color: #082c4e;
+}
+
+.navbar-1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#navbar-2{
+    background-color: #082c4e;
+}
+
+#navbar-2 ul {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-2 ul li {
+    font-size: 18px;
+    list-style: none;
+}
+
+#navbar-2 ul li a {
+    color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    left: 550px;
+}
+
+#navbar-2 ul li a:hover {
+    color: #082c4e;
+    background-color: whitesmoke;
+    text-decoration: underline;
+}
+
+#h3 {
+    padding-left: 70px;
+    color: white;
+    font-family: cursive;
+}
+
+.home{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home-1 {
+    padding-left: 40px; 
+    background-color: #082c4e;
+    margin-top: 90px;
+    height: 40px;
+    position: relative;
+    word-wrap: break-word;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.home-1 h1 {
+    font-size: 40px;
+    padding-left: 70px;
+    margin: 1px;
+    color: white;
+    font-family: cursive;
+}
+
+.home-1 p {
+    font-size: 20px;
+    padding-left: 70px;
+    color: white;
+    font-family: cursive;
+}
+
+.home-1 input {
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: #082c4e;
+    border: 1px solid white;
+    height: 45px;
+    width: 130px;
+    padding: 15px;
+    margin-left: 70px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.home-1 input:hover {
+    color: #082c4e;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image img {
+    display: flex;
+    position: relative;
+    left: 630px;
+    bottom: 110px;
+}
+
+.text-middle{
+    background-color: white;
+    padding-top: 115px;
+}
+
+.ourfeature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: -32px;
+    color: #082c4e;
+    font-family: cursive;
+}
+
+.featuredetails {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.marketing {
+    border: 2px solid rgb(253, 185, 125);
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: rgb(253, 185, 125);
+    color: #082c4e;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.marketing-button a {
+    text-decoration: none;
+    color: #082c4e;
+}
+
+.marketing-button a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.design {
+    border: 2px solid yellow;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: yellow;
+    color: #082c4e;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.design-button a {
+    text-decoration: none;
+    color: #082c4e;
+}
+
+.design-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.research {
+    border: 2px solid skyblue;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: skyblue;
+    color: #082c4e;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.research-button a {
+    text-decoration: none;
+    color: #082c4e;
+    font-family: cursive;
+}
+
+.research-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.branding {
+    border: 2px solid whitesmoke;
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: whitesmoke;
+    color: #082c4e;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.branding-button a {
+    text-decoration: none;
+    color: #082c4e;
+}
+
+.branding-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#detail {
+    border: 2px solid #082c4e;
+    background-color: #082c4e;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+#detail div p {
+    font-size: 34px;
+    padding: 60px;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.text-secondary {
+    color: yellow;
+    text-decoration: none;
+    position: relative;
+    font-size: 34px;
+    margin-left: 119px;
+    top: -80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    word-wrap: break-word;
+}
+
+.text-secondary:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: azure;
+}
+</style>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div class="navbar-1">
+                <a href="#">ResearchM4</a>
+            </div>
+
+
+            <div id="navbar-2">
+
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-1">
+            <h1>Internet research</h1>
+            <h1> for your business.</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <input type="button" value="Get Started">
+        </div>
+
+        <div class="image">
+            <img src="imagess (1).png" alt="girl with laptop" height="210px" width="280px">
+        </div>
+    </section>
+
+
+    <section class="text-middle">
+        <h1 class="ourfeature">
+            Our Features
+        </h1>
+
+        <section class="featuredetails">
+            <div class="marketing">
+                <img src="marketing.png" alt="icon" height="60px" width="60px">
+                <h4>Marketing</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, incidunt!</p>
+
+                <div class="marketing-button">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+
+            <div class="design">
+                <div>
+                    <img src="design.png" alt="icon" height="60px" width="60px">
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, possimus!</p>
+                </div>
+
+                <div class="design-button">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="research">
+                <div>
+                    <img src="research.png" alt="icon" height="60px" width="60px">
+                    <h4>Research</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, facilis?</p>
+                </div>
+
+                <div class="research-button">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="branding">
+                <div>
+                    <img src="branding.png" alt="icon" height="60px" width="60px">
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, sequi.</p>
+                </div>
+
+                <div class="branding-button">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="detail">
+            <div class="items">
+                <p id="text-paragragh">Explore the research we've done</p> 
+                <p id="text-paragragh1" style="  margin-left: -128px;
+                margin-top: -124px;">for our great clients.</p>
+                <br>
+                <a href="#" class="text-secondary">View now.</a>
+            </div>
+        </section>
+
+
+
+    </section>
+</body>
+
+</html>
